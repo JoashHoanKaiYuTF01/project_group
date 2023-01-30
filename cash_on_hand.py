@@ -8,7 +8,8 @@ def COH():
 
     # create a file path using current working directory to link to csv file
     file_path = Path.cwd()/"Cash on Hand.csv" 
-
+    
+    # open csv file and read it
     with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
         reader = csv.reader(file)
         next(reader) # skip header
@@ -33,8 +34,8 @@ def COH():
 
 print(COH())
 
-print("hi dave")
 
+print("hello tessa")
 print("hello dave can u see this message?")
 
 
