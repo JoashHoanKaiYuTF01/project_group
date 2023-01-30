@@ -45,7 +45,6 @@ def profit_and_loss():
 print(profit_and_loss())
 
 
-deficits >0
 
 
 
