@@ -36,7 +36,7 @@ print(COH())
 
 
 
-print("6 hours")
+
 
 
 
