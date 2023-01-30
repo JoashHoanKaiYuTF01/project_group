@@ -34,7 +34,7 @@ def COH():
                 else:
                     return ("cash surplus! well done!")
                 
-#prints function
+#executes function
 print(COH()) 
 
 
