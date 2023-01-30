@@ -32,7 +32,9 @@ def COH():
                 else:
                     return ("cash surplus! well done!")
 
-print(COH())
+print(COH()) 
+
+print("this is for amelda")
 
 
 
