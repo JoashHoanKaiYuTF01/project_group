@@ -1,6 +1,7 @@
-from pathlib import Path
+from pathlib import Path   #imports path 
 import csv
 
+#creates a function 
 def COH(): 
     # create empty lists to append cash on hand and corresponding days from csv
     cash_on_hand = []
@@ -14,6 +15,7 @@ def COH():
         reader = csv.reader(file)
         next(reader) # skip header
 
+        #for loop that iterates over each value until a criteria is met
         for row in reader:
             cash_on_hand.append([row[0], row[1]])
 
@@ -31,7 +33,8 @@ def COH():
                          return f"[Cash on Hand Deficit] Day: {deficits[0]}, Amount: {deficits[1]}"
                 else:
                     return ("cash surplus! well done!")
-
+                
+#prints function
 print(COH()) 
 
 
