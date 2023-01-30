@@ -1,9 +1,10 @@
 from pathlib import Path
 import csv
 
+#creates function
 def profit_and_loss():
     """
-    
+    -
     """
     global profit, values, deficits
 
