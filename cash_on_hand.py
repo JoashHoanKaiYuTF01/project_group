@@ -34,7 +34,7 @@ def COH():
 
 print(COH())
 
-print("tessa is smart")
+
 
 print("6 hours")
 
