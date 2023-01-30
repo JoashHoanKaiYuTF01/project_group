@@ -40,6 +40,8 @@ print("hello dave can u see this message?")
 
 print("hi davey")
 
+print("hi amelda")
+
 
 
 
