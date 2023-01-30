@@ -34,9 +34,7 @@ def COH():
 
 print(COH())
 
-print("commit testing for staged changes")
 
-print("commit testing for staged changes 1.1")
 
 
 
