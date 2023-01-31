@@ -26,7 +26,7 @@ def profit_and_loss():
         for i in range(len(profit)): # for each row in the table
 
             # append profit and profit change for each day to empty list
-            values.append([profit[i][0], (int(profit[i][1]) - int(profit[i-1][1]))])
+            values.append([profit[i][0], (float(profit[i][1]) - float(profit[i-1][1]))])
         
         # remove the profit difference for Day 30
         values[0][-1] = 0
@@ -37,7 +37,7 @@ def profit_and_loss():
             if deficits[1] < 0: # i[1] is the change in profit, the second column in the table
                 
                 if len(deficits) > 0:
-                    # ensure that function will return multiple days of cash deficit if applicable
+                    # ensure that function will return multiple days of profit deficit if applicable
                     for i in range(len(deficits)):
                          return f"[Profit Deficit] Day: {deficits[0]}, Amount: {deficits[1]}"
                 else:

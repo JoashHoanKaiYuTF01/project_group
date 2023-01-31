@@ -1,5 +1,4 @@
-#Data with cash on hand for each day 
-"Day","Cash On Hand"
+Day,Cash On Hand
 30,846447
 31,445071
 32,184078
