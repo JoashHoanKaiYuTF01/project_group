@@ -10,3 +10,5 @@
 "Maintenance Expense",7.76
 "Shipping Expense",0.06
 "Human Resource Expense",10.41
+
+print(human resource expense)
