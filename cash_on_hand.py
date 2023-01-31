@@ -21,7 +21,7 @@ def COH():
         for row in reader:
             cash_on_hand.append([row[0], row[1]])
 
-        
+        #reiterate the function
         for i in range(len(cash_on_hand)):
             COH_values.append([cash_on_hand[i][0], (float(cash_on_hand [i][1]) - float(cash_on_hand[i-1][1]))])
 
