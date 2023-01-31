@@ -1,5 +1,4 @@
-#Data that contains sales, trading profit, operating expense and net profit for 10 consecutive days from day 30 to 40
-"Day","Sales","Trading Profit","Operating Expense","Net Profit"
+Day,Sales,Trading Profit,Operating Expense,Net Profit
 30,27604716,11490112,4557797,6932315
 31,29034639,11957169,4779206,7177963
 32,29222413,11827202,4960013,6867189
