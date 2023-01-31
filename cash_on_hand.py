@@ -27,63 +27,45 @@ def COH():
 
         COH_values[0][-1] = 0
 
-        deficits = 0
-        day = 0
+        #deficits = 0
+        #day = 0
 
-        list1 = []
-        for i in COH_values:
-            if i[1]<0:
-                day = i[0]
-                deficits = i[1]
+        #list1 = []
+        #for i in COH_values:
+            #if i[1]<0:
+                #day = i[0]
+                #deficits = i[1]
                 
                 #day.append(i[0])
                 #deficits.append(i[1])
         #print(deficits)
         #print(day)
-                list1 = list1.append(f"[Cash on Hand Deficit] Day: {day}, Amount: {deficits}")
-                return list1
+                #list1 = list1.append(f"[Cash on Hand Deficit] Day: {day}, Amount: {deficits}")
+                #return list1
           
             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         #print(COH_values)
         #print(cash_on_hand)
 
-        #for deficits in COH_values:
+        for deficits in COH_values:
             
                 #print(deficits)
-                #if deficits[1] < 0: # i[1] is the change in profit, the second column in the table
+                if deficits[1] < 0: # i[1] is the change in profit, the second column in the table
                 
-                    #if len(deficits) > 0:
+                    if len(deficits) > 0:
                     # ensure that function will return multiple days of cash deficit if applicable
-                        #for i in range(len(deficits)):
-                            #return f"[Cash on Hand Deficit] Day: {deficits[0]}, Amount: {deficits[1]}"
+                        for i in range(len(deficits)):
+                            print(f"[Cash on Hand Deficit] Day: {deficits[0]}, Amount: {deficits[1]}")
                      
-                #else:
-                    #return("[CASH SURPLUS] Well done!")
+                    else:
+                        print("[CASH SURPLUS] Well done!")
                 
         
 
                 
 #executes function
-print(COH()) 
+COH()
 
 
 
