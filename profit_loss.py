@@ -42,7 +42,7 @@ def profit_and_loss():
                          return f"[Profit Deficit] Day: {deficits[0]}, Amount: {deficits[1]}"
                 else:
                     return ("Profit increase! well done!")
-# execute function
+# execute and print function
 print(profit_and_loss())
 
 
