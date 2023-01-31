@@ -22,6 +22,7 @@ def COH():
         for i in range(len(cash_on_hand)):
             COH_values.append([cash_on_hand[i][0], (float(cash_on_hand[i][1]) - float(cash_on_hand[i-1][1]))])
 
+
         COH_values[0][-1] = 0
 
         for deficits in COH_values:
@@ -37,40 +38,6 @@ def COH():
 #executes function
 print(COH()) 
 
-from pathlib import Path
-import csv
-
-def profit_and_loss():
-    global profit, values, deficits
-    profit = []
-    values = []
-    current_dir = Path.cwd()/"Profits and Loss.csv" 
-    
-    with current_dir.open(mode="r", encoding="UTF-8", newline="") as file:
-        reader = csv.reader(file)
-        next(reader) # skip header
-        
-        for row in reader:
-            profit.append([row[0], row[4]])
-        
-        for i in range(len(profit)): # for each row in the table
-            #print(profit[i][0], (int(profit[i][1]) - int(profit[i-1][1])))
-            values.append([profit[i][0], (int(profit[i][1]) - int(profit[i-1][1]))])
-        
-        values[0][-1] = 0
-      
-        deficits = [i for i in values if i[1]<0]
-        print(deficits)
-        
-        if len(deficits )> 0:
-            for i in range(len(deficits)):
-                print(f"[cash deficit] day: {deficits[i][0]}, amount: {deficits[i][1]}")
-        else:
-            print("cash surplus! well done!")
-        
-        
-        
-profit_and_loss()
 
 
 
