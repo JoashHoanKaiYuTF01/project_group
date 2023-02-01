@@ -1,10 +1,13 @@
 from pathlib import Path   #imports path 
 import csv
 
+
+
+
 #creates a function 
 def COH(): 
     # create empty lists to append cash on hand and corresponding days from csv
-    global cash_on_hand
+    global cash_on_hand, value, cash_difference, prev_figure
     cash_on_hand = []
     
     # create a file path using current working directory to link to csv file
@@ -42,6 +45,24 @@ def COH():
              
 #executes function
 COH()
+
+print(value)
+cwd = Path.cwd()
+#print(cwd)
+file_path = cwd/"summary_report.txt"
+file_path.touch()
+#print(file_path)
+#print(file_path.exists())
+
+file_path = Path.cwd()/"summary_report.txt"
+
+if cash_difference <0:
+     
+    report_data = [f"[CASH DEFICIT] Day: {value[0]}, AMOUNT: {(cash_difference)}"]
+
+with file_path.open(mode = "w") as file:
+
+    file.writelines(report_data)
 
 
 
