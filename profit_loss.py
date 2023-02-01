@@ -1,5 +1,5 @@
 from pathlib import Path
-import csv
+import csv   #import file 
 
 #creates function
 def profit_and_loss():
@@ -51,9 +51,7 @@ print(cwd)
 file_path = cwd/"summary_report.txt"
 file_path.touch()
 print(file_path)
-print(file_path.exists())
-
-
+print(file_path.exists()) 
 
 
 
