@@ -1,12 +1,12 @@
-﻿"Category","Overheads" # different type of categories with overheads 
-"Salary Expense",12.15
-"Interest Expense ",0.35
-"Marketing Expense",23.44
-"Rental Expense",2.93
-"Overflow Expense - Retail",19.23
-"Overflow Expense - Warehouse",5.64
-"Penalty Expense",3.69
-"Depreciation Expense",14.36
-"Maintenance Expense",7.76
-"Shipping Expense",0.06
-"Human Resource Expense",10.41
+﻿Category,Overheads # different type of categories with overheads 
+Salary Expense,12.15
+Interest Expense ,0.35
+Marketing Expense,23.44
+Rental Expense,2.93
+Overflow Expense - Retail,19.23
+Overflow Expense - Warehouse,5.64
+Penalty Expense,3.69
+Depreciation Expense,14.36
+Maintenance Expense,7.76
+Shipping Expense,0.06
+Human Resource Expense,10.41
