@@ -86,6 +86,7 @@ def COH():
         #print(COH_values)
         #print(cash_on_hand)
 
+        #for loop ot iterate over each value 
         for deficits in COH_values:
             
                 #print(deficits)
