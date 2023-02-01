@@ -1,8 +1,10 @@
-from pathlib import Path
-import csv
+from pathlib import Path  
+import csv    #import file 
 
+#create function
 def overheads():
     global categories, values
+    #create empty list to append values inside
     categories = []
     values = []
     current_dir = Path.cwd()/"Overheads.csv" 
@@ -26,7 +28,7 @@ def overheads():
         return f"Highest Overhead Category: {highest_overhead}, Amount: {highest_overhead_value}"
         
 print(overheads())
-
+#execute function 
 
 
 
