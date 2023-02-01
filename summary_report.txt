@@ -1,0 +1,4 @@
+[Cash Deficit] Day: 31  Amount: -401376.0
+[Cash Deficit] Day: 32  Amount: -260993.0
+[Cash Deficit] Day: 33  Amount: -84773.0
+[Cash Deficit] Day: 35  Amount: -71296.0
