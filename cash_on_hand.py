@@ -5,7 +5,7 @@ import csv    #imports file
 def COH(): 
     # create empty lists to append cash on hand and corresponding days from csv
     global COH_values, cash_on_hand, deficits
-    #create empty list to append values inside 
+    #create empty list to append values into it 
     cash_on_hand = []
     COH_values = []
     
