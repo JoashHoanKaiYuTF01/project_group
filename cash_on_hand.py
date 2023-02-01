@@ -28,10 +28,10 @@ def COH():
         for value in cash_on_hand:
                 
                 cash_difference = float(value[1])-float(prev_figure[1])
-                #print(cash_difference)
+                
 
                 if cash_difference < 0:
-                    #flag_list.append(cash_difference)
+                    
                     print(f"[Cash Deficit] Day: {value[0]}  Amount: {cash_difference}")
                 
                 else:
