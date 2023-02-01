@@ -1,6 +1,6 @@
 import cash_on_hand, overheads, profit_loss
 
-#creates function 
+#creates function x
 def main():
 
     cash_on_hand.COH()
