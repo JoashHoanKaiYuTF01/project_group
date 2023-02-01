@@ -54,8 +54,6 @@ print(file_path)
 print(file_path.exists())
 
 
-print(file_path)
-
 
 
 
