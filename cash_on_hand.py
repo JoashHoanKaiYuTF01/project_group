@@ -35,6 +35,7 @@ def COH():
 
         #print(cash_on_hand)
         flag_list = []
+        #for loop to iterate over each value 
         for value in cash_on_hand:
                 
                 
