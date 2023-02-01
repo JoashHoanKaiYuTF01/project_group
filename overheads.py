@@ -4,7 +4,7 @@ import csv    #import file
 #create function
 def overheads():
     global categories, values
-    #create empty list to append values inside ##
+    #create empty list to append values inside
     categories = []
     values = []
     current_dir = Path.cwd()/"Overheads.csv" 
