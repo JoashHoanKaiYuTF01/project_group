@@ -21,11 +21,47 @@ def COH():
         for row in reader:
             cash_on_hand.append([row[0], row[1]])
 
+        #print(cash_on_hand)
         #reiterate the function
-        for i in range(len(cash_on_hand)):
-            COH_values.append([cash_on_hand[i][0], (float(cash_on_hand [i][1]) - float(cash_on_hand[i-1][1]))])
+        #for i in range(len(cash_on_hand)):
+            #COH_values.append([cash_on_hand[i][0], (float(cash_on_hand [i][1]) - float(cash_on_hand[i-1][1]))])
 
-        COH_values[0][-1] = 0
+        #COH_values[0][-1] = 0
+
+        #print(COH_values)
+        counter = 0
+        prev_figure = cash_on_hand[counter][1]
+
+        #print(cash_on_hand)
+        flag_list = []
+        for value in cash_on_hand:
+                
+                
+            #print(value)
+            #print(value[1])
+                cash_difference = float(value[1])-float(prev_figure)
+                #print(cash_difference)
+
+                if cash_difference < 0:
+                    flag_list.append(cash_difference)
+            
+                counter += 1
+                    
+                #print(flag_list)   
+            #elif cash_difference >= 0:
+                #print("cash surplus")
+        
+        
+        #print(cash_on_hand)
+        #print(cash_on_hand[0][1])
+        #print(value)
+        #print(value[1])
+        print(flag_list)
+
+
+
+
+
 
         #deficits = 0
         #day = 0

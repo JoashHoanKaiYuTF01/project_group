@@ -34,16 +34,25 @@ def profit_and_loss():
         #deficits = [i for i in values if i[1]<0]
         #print(deficits)
         for deficits in values:
+            print(values)
             if deficits[1] < 0: # i[1] is the change in profit, the second column in the table
                 
                 if len(deficits) > 0:
                     # ensure that function will return multiple days of profit deficit if applicable
                     for i in range(len(deficits)):
-                         return f"[Profit Deficit] Day: {deficits[0]}, Amount: {deficits[1]}"
+                         print(f"[Profit Deficit] Day: {deficits[0]}, Amount: {deficits[1]}")
                 else:
-                    return ("Profit increase! well done!")
+                    print("Profit increase! well done!")
 # execute function
-print(profit_and_loss())
+profit_and_loss()
+
+cwd = Path.cwd()
+print(cwd)
+file_path = cwd/"summary_report.txt"
+file_path.touch()
+print(file_path)
+print(file_path.exists())
+
 
 
 
