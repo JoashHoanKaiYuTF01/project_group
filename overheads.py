@@ -18,8 +18,9 @@ def overheads():
         
         for i in categories:
             values.append(float(i[1]))
-        
+            
         max_value = max(values)
+        
         #index_of_max_value = [index for index, item in enumerate(values) if item == max_value][0]
         
         for index, item in enumerate(values):

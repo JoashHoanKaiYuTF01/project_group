@@ -7,7 +7,7 @@ def main():
     overheads.overheads()
     profit_loss.profit_and_loss()
 
-print(main())
+main()
 
 
 
