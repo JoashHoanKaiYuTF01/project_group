@@ -15,11 +15,11 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
         cash_on_hand.append([row[0], row[1]])
 
 
-#creates a function 
+#create a cash on hand function 
 def COH():
     """
-    function flags out days with cash on hand deficits and corresponding deficit values
-    function writes the cash on hand deficit details to a summary report .txt file
+    Function flags out days with cash on hand deficits and corresponding deficit values
+    and writes the cash on hand deficit details to a summary report .txt file
     """
     # create and open .txt file for writing summary_report
     fp = Path.cwd()/"summary_report.txt"
