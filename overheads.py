@@ -37,16 +37,20 @@ def overheads():
             # initialise variable
             maxindex = 0
             for index, item in enumerate(values):
+                    # list to store the f string for highest overhead category and value
                     list2 = []
                     if item == max_value:
                         maxindex = index
-                
+
+            # variable to store the highest overhead category    
             highest_overhead = categories[maxindex][0]
-            
+            # variable to store the highest overhead value
             highest_overhead_value = float(categories[maxindex][1])
-                
+
+            # list to store the highest overhead category and value    
             list2 = [f"Highest Overhead Category: {highest_overhead}, Amount: {highest_overhead_value}%"]
-                
+            
+            # write highest overhead and value to summary_report.txt
             for i in list2:
                 file.writelines(f"{i}\n")
 
