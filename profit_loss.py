@@ -15,7 +15,7 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
 #creates function
 def profit_and_loss():
     """
-    - madam you speaking? i cannot hear anything IM MUTED LA HAHAAHAH WAIT BUT??? LOOK
+    -    
     """
     fp = Path.cwd()/"summary_report.txt"
     with fp.open(mode = "a") as file:
@@ -28,17 +28,14 @@ def profit_and_loss():
     # create a file path using current working directory to link to csv file
     #file_path = Path.cwd()/"Profits and Loss.csv" 
     
-<<<<<<< HEAD
     
     #with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
         #reader = csv.reader(file)
         #next(reader) # skip header
-=======
     #create a file_path
     with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
         reader = csv.reader(file)
         next(reader) # skip header
->>>>>>> 4daccad0562886af857108bf05b2968aa2863fd1
         
          # append days and corresponding profits to empty list profit = [] 
         #for row in reader:
