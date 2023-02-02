@@ -16,11 +16,11 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
         profit.append([row[0], row[4]])
 
 
-#creates function
+#creates profit and loss function
 def profit_and_loss():
     """
-    function flags out days with profit deficit and corresponding deficit values   
-    function writes the profit deficit details to a summary report .txt file
+    Function flags out days with profit deficit and corresponding deficit values   
+    Function writes the profit deficit details to a summary report .txt file
     """
 
     # create file path to summary_report.txt
@@ -49,7 +49,7 @@ def profit_and_loss():
                 
                 # append profit deficit day and corresponding amount to empty list
                 list1.append(f"[PROFIT DEFICIT] DAY: {value[0]},  AMOUNT: HKD{abs(profit_difference)}")
-            # else statement if "profit_difference" does not meet condition
+            # else statement runs when "profit_difference" does not meet condition
             else:
                 counter +=1       
                 if counter == 11: 
