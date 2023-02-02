@@ -1,8 +1,8 @@
 from pathlib import Path   #imports path 
-import csv
+import csv     #import file 
 
 
-
+#creates a file_path
 file_path = Path.cwd()/"Cash on Hand.csv" 
     
     # open csv file and read it
@@ -82,6 +82,7 @@ COH()
 #print(cash_difference)
 #print(value)
 #
+
 
 
 
