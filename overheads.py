@@ -50,7 +50,7 @@ def overheads():
             highest_overhead_value = float(categories[maxindex][1])
 
             # list to store the highest overhead category and value    
-            list2 = [f"Highest Overhead Category: {highest_overhead}, Amount: {highest_overhead_value}%"]
+            list2 = [f"[HIGHEST OVERHEADS] {highest_overhead.upper()}: {highest_overhead_value}%"]
             
             # write highest overhead and value to summary_report.txt
             for i in list2:

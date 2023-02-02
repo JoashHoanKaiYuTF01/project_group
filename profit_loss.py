@@ -48,7 +48,7 @@ def profit_and_loss():
             if profit_difference < 0:
                 
                 # append profit deficit day and corresponding amount to empty list
-                list1.append(f"[Profit Deficit] Day: {value[0]}  Amount: HKD{abs(profit_difference)}")
+                list1.append(f"[PROFIT DEFICIT] DAY: {value[0]},  AMOUNT: HKD{abs(profit_difference)}")
             # else statement if "profit_difference" does not meet condition
             else:
                 counter +=1       
