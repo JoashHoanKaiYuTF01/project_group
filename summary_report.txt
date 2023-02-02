@@ -1,4 +1,4 @@
-[Cash Deficit] Day: 31  Amount: -401376.0
-[Cash Deficit] Day: 32  Amount: -260993.0
-[Cash Deficit] Day: 33  Amount: -84773.0
-[Cash Deficit] Day: 35  Amount: -71296.0
+[Cash Deficit] DAY: 31  AMOUNT: HKD401376.0
+[Cash Deficit] DAY: 32  AMOUNT: HKD260993.0
+[Cash Deficit] DAY: 33  AMOUNT: HKD84773.0
+[Cash Deficit] DAY: 35  AMOUNT: HKD71296.0

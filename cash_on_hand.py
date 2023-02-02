@@ -48,11 +48,13 @@ def COH():
                 list = []
 
                 if cash_difference < 0:
-                    list.append(f"[Cash Deficit] Day: {value[0]}  Amount: {cash_difference}")
+                    list.append(f"[Cash Deficit] DAY: {value[0]}  AMOUNT: HKD{abs(cash_difference)}")
+                    print(list)
                 else:
                     counter +=1       
                     if counter == 11: 
                         list = ["[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY"]
+                        return(list)
                 prev_figure = value
 
                 for i in list:
