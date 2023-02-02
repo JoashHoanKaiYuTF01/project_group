@@ -15,11 +15,11 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
     for row in reader:
             # append overhead transactions to empty list
             categories.append(row)
-#create function
+#create overhead function
 def overheads():
     """
-    function calculates the highest overhead category and correponding percentage
-    function writes the highest overhead details to a summary report .txt file
+    Function calculates the highest overhead category and correponding percentage
+    and writes the highest overhead details to a summary report .txt file
     """
 
     # create file path to summary_report.txt
