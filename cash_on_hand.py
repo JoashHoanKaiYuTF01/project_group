@@ -84,8 +84,7 @@ COH()
 #
 
 print("i think this is correct")
-print("lololol")
-print("poop")
+
 
 
 
