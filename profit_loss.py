@@ -14,7 +14,6 @@ def profit_and_loss():
     # create a file path using current working directory to link to csv file
     file_path = Path.cwd()/"Profits and Loss.csv" 
     
-    # with formula to open file 
     with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
         reader = csv.reader(file)
         next(reader) # skip header
