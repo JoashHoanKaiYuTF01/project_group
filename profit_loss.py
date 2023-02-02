@@ -79,7 +79,6 @@ def profit_and_loss():
 5
 6
 7
-8
 90
 
 1
