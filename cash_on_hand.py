@@ -42,7 +42,7 @@ def COH():
                 if cash_difference < 0:
 
                     # append cash deficit day and corresponding account to empty list
-                    list.append(f"[Cash Deficit] DAY: {value[0]}  AMOUNT: HKD{abs(cash_difference)}")
+                    list.append(f"[CASH DEFICIT] DAY: {value[0]},  AMOUNT: HKD{abs(cash_difference)}")
                     #print(list)
                 else:
                     counter +=1       
