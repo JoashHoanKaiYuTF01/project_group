@@ -33,30 +33,21 @@ def overheads():
             max_value = max(values)
         
         #index_of_max_value = [index for index, item in enumerate(values) if item == max_value][0]
-        maxindex = 0
-        for index, item in enumerate(values):
-                list2 = []
-                if item == max_value:
-                    maxindex = index
-            
-        highest_overhead = categories[maxindex][0]
-        #print(categories[index_of_max_value][0])
-        highest_overhead_value = float(categories[maxindex][1])
-            
-        list2 = [f"Highest Overhead Category: {highest_overhead}, Amount: {highest_overhead_value}"]
-            
-        for i in list2:
-            file.writelines(f"{i}\n")
+            maxindex = 0
+            for index, item in enumerate(values):
+                    list2 = []
+                    if item == max_value:
+                        maxindex = index
+                
+            highest_overhead = categories[maxindex][0]
+            #print(categories[index_of_max_value][0])
+            highest_overhead_value = float(categories[maxindex][1])
+                
+            list2 = [f"Highest Overhead Category: {highest_overhead}, Amount: {highest_overhead_value}"]
+                
+            for i in list2:
+                file.writelines(f"{i}\n")
 #overheads()
-#execute function 
-        for index, item in enumerate(values):
-            if item == max_value:
-                index_of_max_value = index
-
-            highest_overhead = categories[index_of_max_value][0]
-            highest_overhead_value = float(categories[index_of_max_value][1])
-        
-            return f"Highest Overhead Category: {highest_overhead}, Amount: {highest_overhead_value}"
 #executes function 
 
 

@@ -33,9 +33,9 @@ def profit_and_loss():
         #reader = csv.reader(file)
         #next(reader) # skip header
     #create a file_path
-    with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
-        reader = csv.reader(file)
-        next(reader) # skip header
+    #with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
+    #    reader = csv.reader(file)
+    #    next(reader) # skip header
         
          # append days and corresponding profits to empty list profit = [] 
         #for row in reader:
