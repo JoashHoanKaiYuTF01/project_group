@@ -30,7 +30,7 @@ def COH():
         # assign first cash on hand figure to a variable
         prev_figure = cash_on_hand[0][1]
     
-        
+        #for loop to loop over each value 
         for value in cash_on_hand:
                 
                 # equation to find cash on hand difference between different days
