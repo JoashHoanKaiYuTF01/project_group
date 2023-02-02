@@ -16,23 +16,12 @@ def overheads():
         fp = Path.cwd()/"summary_report.txt"
         with fp.open(mode = "w") as file:
             global categories, values
-    #create empty list to append values inside
-    #categories = []
-    #values = [] 
-    
-    #with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
-        #reader = csv.reader(file)
-        #next(reader) # skip header
-        
-        #for row in reader:
-            #categories.append(row)
         
             for i in categories:
                 values.append(float(i[1]))
             
             max_value = max(values)
         
-        #index_of_max_value = [index for index, item in enumerate(values) if item == max_value][0]
             maxindex = 0
             for index, item in enumerate(values):
                     list2 = []
@@ -48,7 +37,7 @@ def overheads():
             for i in list2:
                 file.writelines(f"{i}\n")
 #overheads()
-#executes function 
+
 
 
     
