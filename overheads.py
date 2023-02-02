@@ -18,7 +18,8 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
 #create function
 def overheads():
     """
-    insert docstrings 
+    function calculates the highest overhead category and correponding percentage
+    function writes the highest overhead details to a summary report .txt file
     """
 
     # create file path to summary_report.txt

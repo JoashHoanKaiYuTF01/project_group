@@ -18,7 +18,8 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
 #creates function
 def profit_and_loss():
     """
-    -    
+    function flags out days with profit deficit and corresponding deficit values   
+    function writes the profit deficit details to a summary report .txt file
     """
 
     # create file path to summary_report.txt

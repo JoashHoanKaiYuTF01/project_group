@@ -18,7 +18,8 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
 #creates a function 
 def COH():
     """
-    insert docstrings
+    function flags out days with cash on hand deficits and corresponding deficit values
+    function writes the cash on hand deficit details to a summary report .txt file
     """
     # create and open .txt file for writing summary_report
     fp = Path.cwd()/"summary_report.txt"
