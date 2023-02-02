@@ -17,7 +17,7 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
 #creates a function 
 def COH():
     fp = Path.cwd()/"summary_report.txt"
-    with fp.open(mode = "w") as file: 
+    with fp.open(mode = "a") as file: 
     # create empty lists to append cash on hand and corresponding days from csv
         counter = 0 
         global cash_on_hand, value, cash_difference
@@ -49,7 +49,7 @@ def COH():
 
                 if cash_difference < 0:
                     list.append(f"[Cash Deficit] DAY: {value[0]}  AMOUNT: HKD{abs(cash_difference)}")
-                    print(list)
+                    #print(list)
                 else:
                     counter +=1       
                     if counter == 11: 
