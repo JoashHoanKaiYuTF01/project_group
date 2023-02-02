@@ -7,6 +7,7 @@ file_path = Path.cwd()/"csv_reports"/"Profits and Loss.csv"
 with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
     reader = csv.reader(file)
     next(reader) # skip header
+    # empty list to store profit transactions
     profit = []
     values = []
 
@@ -26,14 +27,16 @@ def profit_and_loss():
     fp = Path.cwd()/"summary_report.txt"
     with fp.open(mode = "a") as file:
         
+        # create a variable for counter
         counter = 0
-        global profit, values, deficits
+        # use a global keyword to tweak profit and values variables not in the function
+        global profit, values
 
         # assign first profit figure to a variable    
         prev_figure = profit[0][1]
 
         
-
+        # for loop to calculate the difference in profit transactions
         for value in profit:
 
             # equation to find profit difference between different days
@@ -41,12 +44,12 @@ def profit_and_loss():
 
             # empty list to append profit deficit day and corresponding amount
             list1 = []
-
+            # if statement loop with condition that profit difference is negative
             if profit_difference < 0:
                 
                 # append profit deficit day and corresponding amount to empty list
                 list1.append(f"[Profit Deficit] Day: {value[0]}  Amount: HKD{abs(profit_difference)}")
-
+            # else statement if "profit_difference" does not meet condition
             else:
                 counter +=1       
                 if counter == 11: 
