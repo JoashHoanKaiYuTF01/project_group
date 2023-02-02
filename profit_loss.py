@@ -16,7 +16,7 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
         profit.append([row[0], row[4]])
 
 
-#creates profit and loss function
+#create profit and loss function
 def profit_and_loss():
     """
     Function flags out days with profit deficit and corresponding deficit values   
