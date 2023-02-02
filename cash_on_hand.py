@@ -17,6 +17,9 @@ with file_path.open(mode="r", encoding="UTF-8", newline="") as file:
 
 #creates a function 
 def COH():
+    """
+    insert docstrings
+    """
     # create and open .txt file for writing summary_report
     fp = Path.cwd()/"summary_report.txt"
     with fp.open(mode = "a") as file: 
