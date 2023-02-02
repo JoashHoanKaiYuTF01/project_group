@@ -55,4 +55,3 @@ def overheads():
             # write highest overhead and value to summary_report.txt
             for i in list2:
                 file.writelines(f"{i}\n")
-1
