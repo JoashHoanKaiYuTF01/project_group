@@ -81,7 +81,6 @@ def profit_and_loss():
 1
 2
 3
-5
 6
 7
 8
