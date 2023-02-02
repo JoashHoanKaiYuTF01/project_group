@@ -33,7 +33,7 @@ def overheads():
         return f"Highest Overhead Category: {highest_overhead}, Amount: {highest_overhead_value}"
         
 print(overheads())
-#execute function 
+#executes function 
 
 
     
