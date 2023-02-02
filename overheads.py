@@ -36,6 +36,8 @@ def overheads():
 
             # initialise variable
             maxindex = 0
+            # for loop to find the max value within the list
+            # enumerate as a counter to run through the index within list
             for index, item in enumerate(values):
                     # list to store the f string for highest overhead category and value
                     list2 = []
